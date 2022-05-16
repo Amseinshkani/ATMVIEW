@@ -1,0 +1,45 @@
+<Style>
+    p {
+        color: white;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 2px solid blue;
+        text-align: left;
+        padding: 8px;
+    }
+tr{
+        background-color: white;
+}
+</style>
+
+<h1 style="color: white;text-align: center;margin-top: 25%;">ShowInventory</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>HolderName</th>
+        <th>cash</th>
+        <th>PassWord</th>
+        <th>NameBank</th>
+        <th>CardNumber</th>
+    </tr>
+    @foreach (var item in ViewBag.A)
+    {
+         <tr>
+        <td>@item.Id</td>
+        <td>@item.HolderName</td>
+        <td>@item.cash</td>
+        <td>@item.PassWord</td>
+        <td>@item.NameBank</td>
+        <td>@item.CardNumber</td>
+    </tr>
+    }
+    
+</table>

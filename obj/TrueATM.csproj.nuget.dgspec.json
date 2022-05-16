@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {}
+    "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {
+    "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
+        "projectUniqueName": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
         "projectName": "TrueATM",
-        "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
+        "projectPath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\obj\\",
+        "outputPath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -72,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

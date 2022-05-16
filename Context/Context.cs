@@ -1,7 +1,7 @@
 using Entity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Context
+namespace DBContext
 {
     public class Context : DbContext
     {
@@ -9,7 +9,7 @@ namespace Context
 
          protected override void OnConfiguring(DbContextOptionsBuilder db)
         {
-            db.UseSqlServer("Data source =. ; initial Catalog = ATMView; integrated Security = true ;");
+            db.UseSqlServer("Data source =. ; initial Catalog = MVCATM; integrated Security = true ;");
         }
     }
 }

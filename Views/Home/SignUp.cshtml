@@ -1,0 +1,19 @@
+@model Models.MVUser
+
+
+<form action="/Home/SignUpAdd" method="post" style="text-align: center;margin-top:28%;padding: 15px;">
+    <h1 style="color:black;">
+        SignUp
+    </h1>
+    <div>
+
+        <input type="text" asp-for="Id" style="display:none;">
+        <input type="text" asp-for="HolderName" placeholder="HolderName">
+        <input type="text" asp-for="cash" placeholder="cash">
+        <input type="text" asp-for="PassWord" placeholder="PassWord">
+        <input type="text" asp-for="NameBank" placeholder="NameBank">
+        
+
+    </div>
+    <button type="submit" style="margin-top:20px;" class="btn btn-primary">SignUp</button>
+</form>

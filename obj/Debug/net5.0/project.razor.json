@@ -15619,8 +15619,28 @@
   "RootNamespace": "TrueATM",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\ShowInventory.cshtml",
+      "TargetPath": "Views\\Home\\ShowInventory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\SignUp.cshtml",
+      "TargetPath": "Views\\Home\\SignUp.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\Menu.cshtml",
+      "TargetPath": "Views\\Home\\Menu.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15634,13 +15654,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\ChangePassword.cshtml",
+      "TargetPath": "Views\\Home\\ChangePassword.cshtml",
       "FileKind": "mvc"
     },
     {
