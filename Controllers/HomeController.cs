@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using DBContext;
 using Entity;
@@ -17,6 +18,8 @@ namespace TrueATM.Controllers
         private readonly Context _Context;
 
         public static int id;
+
+        public static long Money;
 
         public HomeController(Context db)
         {
@@ -52,19 +55,32 @@ namespace TrueATM.Controllers
 
         public IActionResult SignIn(int PassWord)
         {
-            var select =_Context.tblUsers.Where(a => a.PassWord == PassWord).FirstOrDefault();
+            var select =
+                _Context
+                    .tblUsers
+                    .Where(a => a.PassWord == PassWord)
+                    .FirstOrDefault();
 
-            id =_Context.tblUsers.Where(a => a.PassWord == PassWord).Select(a => a.Id).FirstOrDefault();
+            id =
+                _Context
+                    .tblUsers
+                    .Where(a => a.PassWord == PassWord)
+                    .Select(a => a.Id)
+                    .FirstOrDefault();
 
             if (select != null)
             {
                 return RedirectToAction("Menu");
             }
-            return View();
+            else
+            {
+                return RedirectToAction("Error");
+            }
         }
 
         public IActionResult Menu()
         {
+            ViewBag.w = _Context.tblUsers.ToList();
             return View();
         }
 
@@ -72,7 +88,8 @@ namespace TrueATM.Controllers
         {
             var Select =
                 _Context.tblUsers.Where(a => a.Id == id).FirstOrDefault();
-            MVUser A =new MVUser()
+            MVUser A =
+                new MVUser()
                 {
                     Id = Select.Id,
                     HolderName = Select.HolderName,
@@ -84,24 +101,21 @@ namespace TrueATM.Controllers
             return View(A);
         }
 
-        public IActionResult ChangePassword(int Id)
+        public IActionResult ChangePassword()
         {
-            var Select =_Context.tblUsers.Where(a => a.Id == Id).SingleOrDefault();
+            var Select =
+                _Context.tblUsers.Where(a => a.Id == id).SingleOrDefault();
 
-                MVUser A =new MVUser()
-            {
-                Id = Select.Id,
-                 PassWord = Select.PassWord
-            };
+            MVUser A =
+                new MVUser() { Id = Select.Id, PassWord = Select.PassWord };
             return View(A);
         }
 
         public IActionResult EditPass(MVUser x)
         {
             var Select =
-                _Context.tblUsers.Where(a => a.Id == x.Id).SingleOrDefault();
+                _Context.tblUsers.Where(a => a.Id == id).SingleOrDefault();
 
-            Select.Id = x.Id;
             Select.PassWord = x.PassWord;
 
             _Context.tblUsers.Update (Select);
@@ -111,10 +125,64 @@ namespace TrueATM.Controllers
 
         public IActionResult CardToCard()
         {
+            var Select =
+                _Context.tblUsers.Where(a => a.Id == id).SingleOrDefault();
             return View();
         }
 
+        public IActionResult CTCPage(MVUser x)
+        {
+            var Select =
+                _Context.tblUsers.Where(a => a.Id == id).FirstOrDefault();
+                var s = _Context.tblUsers.Where(a=>a.CardNumber==x.CardNumber).FirstOrDefault();
+            if (Select.CardNumber != null)
+            {
+                if (Select.cash >= x.cash)
+                {
+                    Select.cash = Select.cash - x.cash;
+
+                    _Context.tblUsers.Update (Select);
+                    _Context.SaveChanges();
+                }
+                if (x.CardNumber == s.CardNumber)
+                {
+                   s.cash=x.cash+x.cash;
+                    _Context.tblUsers.Update (s);
+                    _Context.SaveChanges();
+                }
+            }
+
+            return RedirectToAction("ShowInventory");
+        }
+
         public IActionResult WithDrawal()
+        {
+            var Select =
+                _Context.tblUsers.Where(a => a.Id == id).SingleOrDefault();
+            return View();
+        }
+
+        public IActionResult WithDrawalNegative(MVUser x)
+        {
+            var Select =
+                _Context.tblUsers.Where(a => a.Id == id).SingleOrDefault();
+
+            if (Select.cash >= x.cash)
+            {
+                Select.cash = Select.cash - x.cash;
+
+                _Context.tblUsers.Update (Select);
+                _Context.SaveChanges();
+                return RedirectToAction("ShowInventory");
+            }
+            else
+            {
+                ViewBag.alert = "موجودی کافی نیست";
+            }
+            return View();
+        }
+
+        public IActionResult Error()
         {
             return View();
         }

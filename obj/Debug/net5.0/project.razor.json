@@ -15624,8 +15624,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\CardToCard.cshtml",
+      "TargetPath": "Views\\Home\\CardToCard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\Error.cshtml",
+      "TargetPath": "Views\\Home\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15641,6 +15651,11 @@
     {
       "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\Menu.cshtml",
       "TargetPath": "Views\\Home\\Menu.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\Views\\Home\\WithDrawal.cshtml",
+      "TargetPath": "Views\\Home\\WithDrawal.cshtml",
       "FileKind": "mvc"
     },
     {

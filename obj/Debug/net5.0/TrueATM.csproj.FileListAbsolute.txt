@@ -388,3 +388,6 @@ C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\SignU
 C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\Menu.cshtml.g.cs
 C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\ShowInventory.cshtml.g.cs
 C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\ChangePassword.cshtml.g.cs
+C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\Error.cshtml.g.cs
+C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\WithDrawal.cshtml.g.cs
+C:\Users\lenovo\OneDrive\Desktop\TrueATM\obj\Debug\net5.0\Razor\Views\Home\CardToCard.cshtml.g.cs

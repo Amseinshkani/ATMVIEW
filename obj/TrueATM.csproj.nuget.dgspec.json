@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {}
+    "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {}
   },
   "projects": {
-    "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {
+    "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
         "projectName": "TrueATM",
-        "projectPath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
+        "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\TrueATM.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\TrueATM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

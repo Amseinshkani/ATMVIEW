@@ -1,0 +1,18 @@
+@model Models.MVUser
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+<h1 style="text-align: center;margin-top: 25%;">
+    Success is achieved through effort
+</h1>
+<form action="/Home/SignIn" method="post">
+
+    <div style="text-align: center; margin-top:10%; ">
+        <input asp-for="PassWord" type="Password" style="padding:3px;" placeholder="PassWord">
+        <button type="submit" class="btn btn-danger">Sign In</button>
+        <a href="/Home/SignUp" class="btn btn-danger">Sign Up</a>
+    </div>
+</form>
+<p class="alert alert-danger">رمز وارد شده صحیح نمیباشد مجدد امت کن</p>

@@ -1,0 +1,17 @@
+@model Models.MVUser
+
+<style>
+    body {
+        background-color: black;
+
+    }
+</style>
+
+<div style="text-align:center;margin-top:25%;">
+    <form action="/Home/CTCPage" method="post">
+        <h1 style="color:white;">Cart To Cart</h1>
+        <input asp-for="CardNumber" type="text"  placeholder="CardNumber">
+        <input asp-for="cash" type="text" placeholder="cash">
+        <button type="submit" class="btn btn-success">تایید</button>
+    </form>
+</div>
