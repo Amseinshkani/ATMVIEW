@@ -1,3 +1,4 @@
+@model Models.MVUser
 <Style>
     p {
         color: white;
@@ -30,16 +31,16 @@ tr{
         <th>NameBank</th>
         <th>CardNumber</th>
     </tr>
-    @foreach (var item in ViewBag.A)
-    {
+
+   
          <tr>
-        <td>@item.Id</td>
-        <td>@item.HolderName</td>
-        <td>@item.cash</td>
-        <td>@item.PassWord</td>
-        <td>@item.NameBank</td>
-        <td>@item.CardNumber</td>
+        <td>@Model.Id</td>
+        <td>@Model.HolderName</td>
+        <td>@Model.cash</td>
+        <td>@Model.PassWord</td>
+        <td>@Model.NameBank</td>
+        <td>@Model.CardNumber</td>
     </tr>
-    }
+    
     
 </table>
